@@ -5,6 +5,7 @@
     ".eslintrc*.json": "jsonc",
     ".stylelintrc": "jsonc",
     "stylelintrc": "jsonc",
+    "manifest.json": "jsonc",
     "README": "markdown"
   },
   "search.useIgnoreFiles": true,
@@ -73,5 +74,11 @@
     "editor.formatOnSave": true
   },
   "emmet.triggerExpansionOnTab": true,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "json.schemas": [
+    {
+      "fileMatch": ["manifest.json"],
+      "url": "https://json.schemastore.org/chrome-manifest.json"
+    }
+  ]
 }
